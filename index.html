@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RS Beauty y Spa</title>
+    <link rel="stylesheet" href="./index.css">
+
+    <link rel="stylesheet" href="./bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/css/bootstrap.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Inspiration&family=Lato:ital,wght@1,300&family=Roboto:ital,wght@0,100;0,400;0,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+    <header class="header">
+        <img src="./Imagenes/logo-10.png" alt="logo de RS Beauty y Spa">
+        <nav class="navbar">
+
+          <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+          
+          <input type="checkbox" id="toggle-menu">
+          <ul class="navbar-list">
+              <li><a class="navbar-link" href="hero">INICIO</a></li>
+              <li><a class="navbar-link" href="about">NOSOTROS</a></li>
+              <li><a class="navbar-link" href="services">SERVICIOS</a></li>
+              <li><a class="navbar-link" href="contact">CONTACTO</a></li>
+              <li><a class="navbar-link color-login" href="loguin">LOGIN</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section id="hero"><!--(HERO ES PORTADA)Le pongo un id, en vez de class, para que me dirija cuando yo este posicionado en inicio, en mi navbar-->
+            <div class="hero-presentacion">
+                <h1>La belleza y bienestar <span>en un solo lugar</span></h1>  <!--Puse la otra parte dentro de un span para poder bajar el texto-->
+                <p>Queremos que aprendas a cuidarte y sentirte bien con vos mismo! En nuestro centro ofrecemos armonía y vitalidad para tu cuerpo.
+                Contamos con todos los tratamientos, equipos y profesionales necesarios para que te sientas como en casa.</p>
+
+                <div class="button-container"> <!--En este caso no usamos etiqueta boton, sino etiq "a" que van a tener estilos de boton. Para que me redirija-->
+                    <a href="#" class="button-registrarse">Registrarse</a>
+                </div>
+            </div>
+
+            <img src="./Imagenes/pretty-woman-in-blooming-garden.jpg" alt="Imagen de mujer con flores" class="hero-img">
+        </section> 
+
+
+        <section id="about">
+            <h2 class="about-titulo">Sobre Nosotros</h2>
+            <p class="about-parrafo">Somos un grupo de profesionales y especialistas en la estética corporal. Ofrecemos atención personalizada de alta calidad, contando con equipos profesionales que nos permitan garantizarles excelentes resultados y brindarles una mayor seguridad.
+             Proporcionamos diversos servicios, tratamientos esteticos, asesoramiento y más, según tus necesidades. No dudes en consultar con nosotros.</p>
+
+
+            
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./Imagenes/two-happy-friendly-young-woman.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./Imagenes/pexels-anna-shvets-5069508.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./Imagenes/close-up-portrait-of-smiling-tann-woman-with-curly-hairs-.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./Imagenes/young-woman-receiving-head-massage-in-spa-center.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="./Imagenes/beauty-portrait-of-smiling-pretty-woman-with-healthy-skin.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                </div>
+            
+        </section>
+
+        
+    </main>
+
+
+<script src="./bootstrap-5.2.0-dist/bootstrap-5.2.0-dist/js/bootstrap.js"></script> 
+</body>
+</html>

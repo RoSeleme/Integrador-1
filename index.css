@@ -1,0 +1,260 @@
+* {
+    padding: 0;                    /*Todo esto va siempre que empiece un proyecto*/
+    margin: 0;                    /*Todo esto va siempre que empiece un proyecto*/
+    box-sizing: border-box;      /*Todo esto va siempre que empiece un proyecto*/
+}
+
+
+/*HEADER*/
+
+.header {
+    height: 80px;
+    width: 100%;
+    padding: 0px 50px;   /*0px arriba y abajo y 50px a la derecha e izquierda*/
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /*Para que el header siempre se muestre arriba de todo*/
+    top: 0;
+    /* background: rgb(204,187,194);
+    background: radial-gradient(circle, rgba(204,187,194,1) 0%, rgba(148,187,233,0) 100%); */
+    /* background: rgb(204,187,194);
+background: radial-gradient(circle, rgba(204,187,194,0.6842087176667542) 0%, rgba(148,187,233,0) 100%); */
+/* background: rgb(204,187,194);
+background: radial-gradient(circle, rgba(204,187,194,0.5441526952577906) 0%, rgba(148,187,233,0) 100%); */
+/* background: rgb(204,187,194);
+background: radial-gradient(circle, rgba(204,187,194,0.2976540958180147) 0%, rgba(148,187,233,0) 100%); */
+background-color: white;
+z-index: 1;  /*Para que tenga mas importancia el header. Siempre se va mostrar por encima de cualquier elemento, cuando scrolllemos la pag*/
+}
+
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 100px;
+}
+
+.header img {     /*Asi busca especificamente la img del header (LOGO), para no darle una clase*/
+    height: 100%;   /*Al ponerle un alto del 100% del padre(en este caso el header su padre), ya se acomoda atomaticamente el ancho tmb
+    Y con display flex del header, ya queda centrado perfectamente tmb*/
+}
+
+
+
+.navbar-link {
+    text-decoration: none;
+    color: #5A5A54;
+    font-weight: 400;
+}
+
+.color-login {
+    color: #E79D9D;
+}
+
+
+/*Menu hamburguesa*/
+
+.navbar {
+    display: flex;
+}
+
+.navbar i {
+    font-size: 36px;
+    display: none; /*Para no ver la barra desplegable*/
+}
+
+
+#toggle-menu {
+    display: none; /*Para desaparecer el checkout tmb*/
+}
+
+
+
+
+
+/*MAIN*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*SECCION HERO (PORTADA)*/
+
+#hero {
+    margin-top: 80px; /*Para que baje y no se coma con el header*/
+    display: flex;
+    padding: 70px 0px; /*¡¡IMPORTANTE!! Esto pongo para GENERAR LOS ESPACIOS tanto arriba como abajo de la seccion. NORMALMENTE LOS 
+ALUMNOS PONEN UN "HEIGTH" A LA SECCION (por ej un height en px) y es muy comun. ¡PERO ESTO COMPLICA A LA HORA DE HACER EL RESPONSIVE!!
+ ya que es muy FACIL que la pagina SE ROMPA a medida que cambiamos las resoluciones */
+
+    width: 90%; /*Esto para que no ocupe todo el ancho de la pag el hero*/
+    justify-content: space-around;  /*Para tener espacio entre los costados y en el medio de los elementos*/
+ /* background-color: #0B2A1C; */
+ /* background-color: #716864; */
+ /* background: rgb(113,104,100);
+background: linear-gradient(337deg, rgba(113,104,100,1) 34%, rgba(127,138,155,1) 100%); */
+    background: rgb(113,104,100);
+    background: linear-gradient(177deg, rgba(113,104,100,1) 34%, rgba(127,138,155,1) 100%);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.hero-presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;    /*ESPACIADO INTERNO entre los elementos de este contenedor*/
+}
+
+.hero-presentacion h1 {  /*Para referirme al h1 que esta dentro de esta clase*/
+    font-weight: 400;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;  /*Hago esto de display y flex-direc, para que el span que esta dentro de h1, se ponga abajo. Como columna*/
+    font-family: 'Cinzel Decorative', cursive;
+    color: #E79D9D;
+}
+
+.hero-presentacion p {
+    font-weight: 200;
+    font-size: 16px;
+    max-width: 350px;  /*Para que el parrafo no sea mas grande que esto*/
+    text-align: justify;
+    color: rgb(235, 232, 233);
+    font-family: 'Lato', sans-serif;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    /* gap: 15px; */   /*TENGO UN SOLO BOTON, ESTO NO HACE FALTA*/
+}
+
+/*Ahora le damos estilo al button-container*/
+.button-container a {
+    text-decoration: none;
+    border: 3px black;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 12px;
+    font-weight: 600;
+
+    background-color: #E79D9D;
+    color: white;
+}
+
+
+.hero-img {
+    width: 475px;
+    border-top-left-radius: 20px ;
+}
+
+
+
+/*SECTION ABOUT*/
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 700px;   /*Esto va servir a futuro PARA CUANDO HAGA EL RESPONSIVE.Como mucho quiero que crezca 850px, pero cuando sea
+    menor a eso, tiene que ser el 80%, es decir, para que funcione bien el width=80% tengo que tener menor a 850px. (Todo esto para que
+    cuando achique la pagina, se va acomodar al 80% de los dispositivos más pequeños*/
+    padding: 100px 0px;
+    /* font-weight: 300; */
+    text-align: center;
+    color: #5A5A54;
+    /* background-color: #E79D9D; */
+    gap: 50px;
+}
+
+.about-titulo {
+    font-size: 25px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 100;
+}
+
+.about-parrafo {
+    font-weight: 200;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    background-color: #f9f6f7;
+}
+
+
+
+/*Medias Queries*/
+@media (max-width:992px) {
+    .hero-presentacion {
+        text-align: center;
+        width: 90%;
+        align-items: center;
+    }
+
+    .hero-presentacion h1 {
+        display: block;
+        width: 100%;
+    }
+
+    .hero-presentacion p {
+        max-width: 80%;
+        font-size: 16px;
+    }
+
+    .button-container {
+        justify-content: center;
+    }
+
+    .hero-img {
+        display: none;
+    }
+
+    #about {
+        font-size: 15px;
+    }
+}
+
+
+ @media (max-width: 576px) {
+    
+    .navbar ul{
+        background-color: white;
+        width: 100%;   /*Para que ocupe todo el viewport*/
+        height: calc(100vh - 80px);      /*Calculo, para que de altura tenga: de viewport ocupa todo menos 80px que es lo que mide el header, para que no lo tape*/
+        position: absolute;      /*Para sacarlo del flujo del header (a la barra de menu que va aparecer cuando se aplique esta media)*/
+        top: 66px;                   
+        left: -55px;                 /*Para que arranque desde la izquierda*/
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+        transform: translateX(500%);  /*Para sacarlo totalmente de la pantalla*/
+        transition: all 0.4s ease-out;  /*Efecto para cuando se vaya*/
+    }
+
+    .navbar i {
+       display: block; 
+        background-color: white; 
+    }
+
+    #toggle-menu:checked ~ .navbar-list {      /*Para que cuando haga click se desplace la barra menu*/
+        transform: translateX(0);    /*Para que vuelva a la posicion original*/
+        transition: all 0.4s ease-in;  /*Efecto para cuando vuelva*/
+    }
+
+    .hero-presentacion p {
+        max-width: 100%;
+    }
+} 
