@@ -97,8 +97,6 @@ ALUMNOS PONEN UN "HEIGTH" A LA SECCION (por ej un height en px) y es muy comun. 
     justify-content: space-around;  /*Para tener espacio entre los costados y en el medio de los elementos*/
  /* background-color: #0B2A1C; */
  /* background-color: #716864; */
- /* background: rgb(113,104,100);
-background: linear-gradient(337deg, rgba(113,104,100,1) 34%, rgba(127,138,155,1) 100%); */
     background: rgb(113,104,100);
     background: linear-gradient(177deg, rgba(113,104,100,1) 34%, rgba(127,138,155,1) 100%);
     border-radius: 0px 0px 20px 20px;
@@ -192,6 +190,14 @@ background: linear-gradient(337deg, rgba(113,104,100,1) 34%, rgba(127,138,155,1)
 main {
     background-color: #f9f6f7;
 }
+
+
+
+
+
+
+
+
 
 
 
