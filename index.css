@@ -219,7 +219,6 @@ main {
     display: flex;
     flex-direction: row;
     gap: 50px;
-    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
     
 }
 
@@ -235,11 +234,7 @@ main {
     gap: 50px;
 }
 
-/* .btn btn-primary {
-    background-color: #E79D9D;
-    color: white;
 
-} */
 
 
 
@@ -315,3 +310,28 @@ main {
     }
 } 
 
+@media (max-width:980px) {
+
+    /* #service {
+        display: flex;
+        flex-direction: column;
+    } */
+
+     .carta1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .carta2 {
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .carta3 {
+        display: flex;
+        flex-direction: column;
+        
+} 
+
+}
