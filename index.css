@@ -205,8 +205,13 @@ main {
     color: #5A5A54;
     text-align: center;
     gap: 50px;
+    font-family: 'Lato', sans-serif;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
+.card {
+    box-shadow: #5A5A54 0px 8px 24px;
+}
 
 .services-titulo {
     font-size: 25px;
