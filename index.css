@@ -70,7 +70,14 @@ z-index: 1;  /*Para que tenga mas importancia el header. Siempre se va mostrar p
     display: none; /*Para desaparecer el checkout tmb*/
 }
 
+.navbar-list li:hover, li.active {
+    
+    background-color: rgba(231, 157, 157, .40);
+    transition: .5s;
+    border-radius: 5px;
+    border-style: none;
 
+}
 
 
 
@@ -107,11 +114,13 @@ ALUMNOS PONEN UN "HEIGTH" A LA SECCION (por ej un height en px) y es muy comun. 
     flex-direction: column;
     justify-content: center;
     gap: 40px;    /*ESPACIADO INTERNO entre los elementos de este contenedor*/
+    /* align-items: center; */
+    font-family: 'Lato', sans-serif;
 }
 
 .hero-presentacion h1 {  /*Para referirme al h1 que esta dentro de esta clase*/
     font-weight: 400;
-    font-size: 40px;
+    font-size: 35px;
     display: flex;
     flex-direction: column;  /*Hago esto de display y flex-direc, para que el span que esta dentro de h1, se ponga abajo. Como columna*/
     font-family: 'Cinzel Decorative', cursive;
@@ -124,7 +133,6 @@ ALUMNOS PONEN UN "HEIGTH" A LA SECCION (por ej un height en px) y es muy comun. 
     max-width: 350px;  /*Para que el parrafo no sea mas grande que esto*/
     text-align: justify;
     color: rgb(235, 232, 233);
-    font-family: 'Lato', sans-serif;
 }
 
 
@@ -138,11 +146,11 @@ ALUMNOS PONEN UN "HEIGTH" A LA SECCION (por ej un height en px) y es muy comun. 
 .button-container a {
     text-decoration: none;
     border: 3px black;
-    border-radius: 20px;
-    padding: 8px 15px;
+    border-radius: 10px;
+    padding: 10px 15px;
     font-size: 12px;
     font-weight: 600;
-
+    letter-spacing: 3px;
     background-color: #E79D9D;
     color: white;
 }
@@ -241,9 +249,84 @@ main {
 
 
 
+/*SECTION CONTACT*/
+#contact {
+    padding: 100px 0px;
+    width: 90%;
+    /* max-width: 700px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #5a5a54;
+    text-align: center;
+    gap: 50px;
+    font-family: 'Lato', sans-serif;
+
+}
 
 
 
+
+.contact-div {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-image: fill;
+}
+
+.contact-titulo {
+    font-size: 25px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 200;
+}
+
+.contact-parrafo {
+    font-weight: 200;
+    font-size: 18px;
+    
+}
+
+
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    gap: 20px;
+
+}
+
+
+.input-form {
+    width: 100%;
+    /* height: 50px; */
+    border-radius: 5px ;
+    border-style: none;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+.container-button-send {
+    display: flex;
+    justify-content: center;
+}
+
+.button-send {
+    text-decoration: none;
+    border: 3px black;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    background-color: #E79D9D;
+    color: white;
+}
 
 
 
@@ -252,7 +335,7 @@ main {
 
 
 /*Medias Queries*/
-@media (max-width:992px) {
+@media (max-width:995px) {
     .hero-presentacion {
         text-align: center;
         width: 90%;
