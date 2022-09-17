@@ -275,7 +275,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    border-image: fill;
+    /* border-image: fill; */
 }
 
 .contact-titulo {
@@ -331,7 +331,94 @@ main {
 
 
 
+/*SECTION FOOTER*/
 
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #E79D9D;
+}
+
+.container-footer {
+    padding: 100px 0px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    
+    
+}
+
+.RS-Titulo {
+    font-size: 25px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: 200;
+    
+}
+
+.container-logos-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 80%;
+    gap: 50px;
+}
+
+.logo-ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-whatsapp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer2 {
+    /* padding: 100px 0px; */
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+    font-family: 'Lato', sans-serif;
+    color: #5A5A54;
+    font-weight: 300;
+    border-top: 1px solid  #5A5A54;
+}
+
+.logos-footer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    font-size: 15px;
+    width: 80%;
+    gap: 20px;
+    /* padding-left: 700px; */
+}
 
 
 /*Medias Queries*/
