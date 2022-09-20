@@ -457,22 +457,24 @@ footer {
     
     .navbar ul{
         background-color: white;
-        width: 100%;   /*Para que ocupe todo el viewport*/
+        max-width: 300 px;  /* Para que ocupe todo el viewport*/
         height: calc(100vh - 80px);      /*Calculo, para que de altura tenga: de viewport ocupa todo menos 80px que es lo que mide el header, para que no lo tape*/
-        position: absolute;      /*Para sacarlo del flujo del header (a la barra de menu que va aparecer cuando se aplique esta media)*/
+        position: absolute;   /*Para sacarlo del flujo del header (a la barra de menu que va aparecer cuando se aplique esta media)*/
         top: 66px;                   
-        left: -55px;                 /*Para que arranque desde la izquierda*/
+        left: -60px;                 /*Para que arranque desde la izquierda*/
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 80px;
         transform: translateX(500%);  /*Para sacarlo totalmente de la pantalla*/
-        transition: all 0.4s ease-out;  /*Efecto para cuando se vaya*/
+        transition: all 0.4s ease-out;  /*Efecto para cuando se vaya */
+        padding: 0px 30px;
     }
 
     .navbar i {
        display: block; 
         background-color: white; 
+
     }
 
     #toggle-menu:checked ~ .navbar-list {      /*Para que cuando haga click se desplace la barra menu*/
