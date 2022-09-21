@@ -47,6 +47,7 @@ z-index: 1;  /*Para que tenga mas importancia el header. Siempre se va mostrar p
     text-decoration: none;
     color: #5A5A54;
     font-weight: 400;
+    /* padding: 0px 5px; */
 }
 
 .color-login {
@@ -61,7 +62,7 @@ z-index: 1;  /*Para que tenga mas importancia el header. Siempre se va mostrar p
 }
 
 .navbar i {
-    font-size: 36px;
+    font-size: 30px;
     display: none; /*Para no ver la barra desplegable*/
 }
 
@@ -76,7 +77,6 @@ z-index: 1;  /*Para que tenga mas importancia el header. Siempre se va mostrar p
     transition: .5s;
     border-radius: 5px;
     border-style: none;
-
 }
 
 
@@ -337,15 +337,15 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: #E79D9D;
+    background-color: rgba(231, 157, 157, 0.75)
+    
 }
 
 .container-footer {
-    padding: 100px 0px;
+    padding: 50px 0px;
     width: 90%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -365,7 +365,7 @@ footer {
 
 .container-logos-footer {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     font-size: 15px;
@@ -404,6 +404,7 @@ footer {
     text-align: center;
     gap: 50px;
     font-family: 'Lato', sans-serif;
+    font-size: 15px;
     color: #5A5A54;
     font-weight: 300;
     border-top: 1px solid  #5A5A54;
@@ -453,22 +454,23 @@ footer {
 }
 
 
- @media (max-width: 576px) {
+ @media (max-width: 935px) {
     
     .navbar ul{
         background-color: white;
-        max-width: 300 px;  /* Para que ocupe todo el viewport*/
+        width: 300 px;  /* Para que ocupe todo el viewport*/
         height: calc(100vh - 80px);      /*Calculo, para que de altura tenga: de viewport ocupa todo menos 80px que es lo que mide el header, para que no lo tape*/
         position: absolute;   /*Para sacarlo del flujo del header (a la barra de menu que va aparecer cuando se aplique esta media)*/
-        top: 66px;                   
+        top: 60px;                   
         left: -60px;                 /*Para que arranque desde la izquierda*/
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 80px;
         transform: translateX(500%);  /*Para sacarlo totalmente de la pantalla*/
-        transition: all 0.4s ease-out;  /*Efecto para cuando se vaya */
+        transition: all 0.5s ease-out;  /*Efecto para cuando se vaya */
         padding: 0px 30px;
+        opacity: 0.7;
     }
 
     .navbar i {
@@ -479,7 +481,7 @@ footer {
 
     #toggle-menu:checked ~ .navbar-list {      /*Para que cuando haga click se desplace la barra menu*/
         transform: translateX(0);    /*Para que vuelva a la posicion original*/
-        transition: all 0.4s ease-in;  /*Efecto para cuando vuelva*/
+        transition: all 0.5s ease-in;  /*Efecto para cuando vuelva*/
     }
 
     .hero-presentacion p {
@@ -488,11 +490,6 @@ footer {
 } 
 
 @media (max-width:980px) {
-
-    /* #service {
-        display: flex;
-        flex-direction: column;
-    } */
 
      .carta1 {
         display: flex;
@@ -511,4 +508,28 @@ footer {
         
 } 
 
+
+
+}
+
+@media (max-width:648px) {
+
+    .container-footer {
+        padding: 30px 0px;
+        gap: 40px;
+    }
+
+    .container-logos-footer {
+        flex-direction: column;
+        gap: 20px;
+        font-size: 13px;
+    }
+
+    .RS-Titulo {
+        font-size: 20px;
+    }
+
+    .container-footer2 {
+        font-size: 13px;
+    }
 }
