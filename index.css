@@ -221,6 +221,7 @@ main {
     box-shadow: #5A5A54 0px 8px 24px;
 }
 
+
 .services-titulo {
     font-size: 25px;
     font-family: 'Cinzel Decorative', cursive;
@@ -529,7 +530,38 @@ footer {
         font-size: 20px;
     }
 
+    
     .container-footer2 {
         font-size: 13px;
+    }
+
+
+    .contact-titulo {
+        font-size: 20px;
+    }
+
+    .services-titulo { 
+        font-size: 20px;
+    }
+
+    .about-titulo {
+        font-size: 20px;
+    }
+
+    .hero-presentacion h1 {
+        font-size: 30px;
+    }
+
+
+    .contact-parrafo {
+        font-size: 16px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-text {
+        font-size: 12px;
     }
 }
